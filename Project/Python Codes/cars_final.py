@@ -31,10 +31,10 @@ try:
         myData = dict()
         for i in range(1,n+1):
             slots[i]=random.randint(0,1)
-        #myData['Entry'] = random.randint(0,1000)
-        myData['Entry'] = 530
-        #myData['Exit'] = random.randint(0,1000)
-        myData['Exit'] = 345
+        myData['Entry'] = random.randint(0,1000)
+        #myData['Entry'] = 530
+        myData['Exit'] = random.randint(0,1000)
+        #myData['Exit'] = 345
         client.publishEvent(eventId="status", msgFormat="json", data=myData, qos=0, onPublish=None)
         print("Published data Successfully: %s", myData)
         client.commandCallback = myCommandCallback
