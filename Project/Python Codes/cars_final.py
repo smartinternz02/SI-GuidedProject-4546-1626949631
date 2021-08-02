@@ -27,10 +27,7 @@ try:
     
     while True:
         n = int(input())
-        slots = dict()
         myData = dict()
-        for i in range(1,n+1):
-            slots[i]=random.randint(0,1)
         myData['Entry'] = random.randint(0,1000)
         #myData['Entry'] = 530
         myData['Exit'] = random.randint(0,1000)
